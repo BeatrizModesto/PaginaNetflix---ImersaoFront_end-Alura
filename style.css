@@ -1,42 +1,40 @@
 body {
-    background: #141414; /* Define a cor de fundo da página */
-    color: #fff; /* Define a cor do texto principal */
-    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; /* Define a fonte usada no site */
+    background: #141414; 
+    color: #fff;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; 
     margin: 0; /* Remove a margem padrão do body */
     min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
 }
 
 main {
-    display: flex; /* Usa flexbox para layout */
-    flex-direction: column; /* Organiza os elementos em coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    min-height: 100vh; /* Garante altura mínima de 100% da tela */
-}
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh; 
 
 h1 {
-    font-size: 2.5rem; /* Define o tamanho da fonte do título */
-    font-weight: bold; /* Deixa o texto em negrito */
-    margin-bottom: 2rem; /* Espaço abaixo do título */
-    letter-spacing: 1px; /* Espaçamento entre letras */
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    margin-bottom: 2rem; 
+    letter-spacing: 1px; 
 }
 
 section[aria-label="Perfis disponíveis"] {
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 600px; /* Limita a largura máxima */
-    display: flex; /* Usa flexbox */
-    justify-content: center; /* Centraliza os perfis */
-}
+    width: 100%; 
+    max-width: 600px; 
+    display: flex; 
+    justify-content: center; 
 
 nav.profiles {
-    display: flex; /* Usa flexbox para os perfis */
-    gap: 2rem; /* Espaço entre os perfis */
+    display: flex; /* Usa flexbox para os perfis *
+    gap: 2rem; 
 }
 
 .profile {
-    text-decoration: none; /* Remove sublinhado dos links */
-    color: #fff; /* Cor do texto dos links */
-    transition: transform 0.2s, box-shadow 0.2s; /* Suaviza animações de transformação e sombra */
+    text-decoration: none;
+    color: #fff; 
+    transition: transform 0.2s, box-shadow 0.2s; 
 }
 
 figure {
@@ -47,23 +45,23 @@ figure {
 }
 
 img {
-    width: 120px; /* Largura fixa da imagem */
-    height: 120px; /* Altura fixa da imagem */
-    border-radius: 8px; /* Bordas arredondadas */
-    object-fit: cover; /* Mantém proporção da imagem */
-    margin-bottom: 0.5rem; /* Espaço abaixo da imagem */
-    background: #222; /* Cor de fundo da imagem */
-    display: block; /* Exibe como bloco */
-    border: 1px transparent; /* Borda inicial invisível */
+    width: 120px; 
+    height: 120px; 
+    border-radius: 8px;
+    object-fit: cover; 
+    margin-bottom: 0.5rem; 
+    background: #222; 
+    display: block;
+    border: 1px transparent;
 }
 
 img:hover {
-    border: 1px solid #fff; /* Borda branca ao passar o mouse */
+    border: 1px solid #fff;
 }
 
 figcaption {
-    font-size: 1.1rem; /* Tamanho da fonte da legenda */
-    font-weight: 500; /* Peso da fonte */
-    margin-top: 0.5rem; /* Espaço acima da legenda */
-    letter-spacing: 0.5px; /* Espaçamento entre letras */
+    font-size: 1.1rem; 
+    font-weight: 500; 
+    margin-top: 0.5rem; 
+    letter-spacing: 0.5px; 
 }
