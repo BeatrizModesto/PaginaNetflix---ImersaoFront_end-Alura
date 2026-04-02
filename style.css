@@ -12,6 +12,7 @@ main {
     align-items: center; 
     justify-content: center;
     min-height: 100vh; 
+}
 
 h1 {
     font-size: 2.5rem; 
@@ -25,9 +26,10 @@ section[aria-label="Perfis disponíveis"] {
     max-width: 600px; 
     display: flex; 
     justify-content: center; 
+}
 
 nav.profiles {
-    display: flex; /* Usa flexbox para os perfis *
+    display: flex; /* Usa flexbox para os perfis */
     gap: 2rem; 
 }
 
