@@ -4,6 +4,14 @@ body {
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif; 
     margin: 0; /* Remove a margem padrão do body */
     min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 main {
@@ -29,7 +37,7 @@ section[aria-label="Perfis disponíveis"] {
 }
 
 nav.profiles {
-    display: flex; /* Usa flexbox para os perfis */
+    display: flex;/* Usa flexbox para os perfis */
     gap: 2rem; 
 }
 
@@ -40,10 +48,10 @@ nav.profiles {
 }
 
 figure {
-    margin: 0; /* Remove margem padrão */
-    display: flex; /* Usa flexbox */
-    flex-direction: column; /* Organiza em coluna */
-    align-items: center; /* Centraliza itens */
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 img {
@@ -55,10 +63,14 @@ img {
     background: #222; 
     display: block;
     border: 1px transparent;
+    transition: transform 0.3s ease, border 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 img:hover {
     border: 1px solid #fff;
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 figcaption {
